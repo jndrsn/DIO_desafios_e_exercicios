@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Usu&#225;rio"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-01-23 06:26:32 "/>
+        <attribute name="created" value="VXN1w6FyaW87REVTS1RPUC1TQkJBUUI3OzIwMjEtMDEtMjE7IjA3OjI5OjI2ICI7MzEyNw=="/>
+        <attribute name="edited" value="VXN1w6FyaW87REVTS1RPUC1TQkJBUUI3OzIwMjEtMDEtMjM7IjA2OjI2OjMyICI7MjszMjMx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nota1, nota2, nota3, nota4, media, soma" type="Real" array="False" size=""/>
+            <input variable="nota1"/>
+            <input variable="nota2"/>
+            <input variable="nota3"/>
+            <input variable="nota4"/>
+            <assign variable="media" expression="(nota1+nota2+nota3+nota4)/4"/>
+            <assign variable="soma" expression="(nota1+nota2+nota3+nota4)"/>
+            <output expression="media" newline="True"/>
+            <if expression="media&gt;=7">
+                <then>
+                    <output expression="&quot;Parab&#233;ns, voc&#234; foi APROVADO!!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Infelizmente voc&#234; est&#225; REPROVADO&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

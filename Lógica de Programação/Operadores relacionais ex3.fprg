@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Usu&#225;rio"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-01-23 06:51:31 "/>
+        <attribute name="created" value="VXN1w6FyaW87REVTS1RPUC1TQkJBUUI3OzIwMjEtMDEtMjM7IjA2OjQwOjE4ICI7MzEyMg=="/>
+        <attribute name="edited" value="VXN1w6FyaW87REVTS1RPUC1TQkJBUUI3OzIwMjEtMDEtMjM7IjA2OjUxOjMxICI7MTszMjI3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nota1, nota2, nota3, nota4, media" type="Real" array="False" size=""/>
+            <declare name="nome" type="String" array="False" size=""/>
+            <output expression="&quot;Qual seu nome ?&quot;" newline="True"/>
+            <input variable="nome"/>
+            <output expression="&quot;Qual a primeira nota?&quot;" newline="True"/>
+            <input variable="nota1"/>
+            <output expression="&quot;Qual a segunda nota?&quot;" newline="True"/>
+            <input variable="nota2"/>
+            <output expression="&quot;Qual a terceira nota?&quot;" newline="True"/>
+            <input variable="nota3"/>
+            <output expression="&quot;Qual a quarta nota ?&quot;" newline="True"/>
+            <input variable="nota4"/>
+            <assign variable="media" expression="(nota1+nota2+nota3+nota4)/4"/>
+            <if expression="media&gt;=7">
+                <then>
+                    <output expression="&quot;Parab&#233;ns &quot; &amp;nome &amp; &quot;, voc&#234; foi APROVADO com uma M&#233;dia de &quot; &amp;media &amp; &quot;!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="nome &amp; &quot;, infelizmente, voc&#234; N&#195;O foi aprovado! Sua m&#233;dia foi &quot; &amp;media" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

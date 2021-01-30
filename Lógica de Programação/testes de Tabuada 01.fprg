@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Usu&#225;rio"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-01-23 09:30:08 "/>
+        <attribute name="created" value="VXN1w6FyaW87REVTS1RPUC1TQkJBUUI3OzIwMjEtMDEtMjM7IjA3OjEzOjA3ICI7MzEyMQ=="/>
+        <attribute name="edited" value="VXN1w6FyaW87REVTS1RPUC1TQkJBUUI3OzIwMjEtMDEtMjM7IjA5OjMwOjA4ICI7MTszMjMx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero, numx" type="Integer" array="False" size=""/>
+            <declare name="operacao" type="String" array="False" size=""/>
+            <assign variable="numx" expression="0"/>
+            <output expression="&quot;Qual a OPERA&#199;&#194;O da TABUADA que voc&#234; gostaria ?&quot;" newline="True"/>
+            <input variable="operacao"/>
+            <if expression="&quot;soma&quot;">
+                <then>
+                    <output expression="&quot;A TABUADA da SOMA de qual n&#250;mero voc&#234; gostaria ? &quot;" newline="True"/>
+                    <input variable="numero"/>
+                    <while expression="numx&lt;=10">
+                        <output expression="numero &amp; &quot; X &quot; &amp; numx &amp; &quot; = &quot; &amp; numero+numx" newline="True"/>
+                        <assign variable="numx" expression="numx+1"/>
+                    </while>
+                </then>
+                <else>
+                    <if expression="&quot;subtracao&quot;">
+                        <then>
+                            <output expression="&quot;A TABUADA da SUBTRA&#199;&#195;O de qual n&#250;mero voc&#234; gostaria ? &quot;" newline="True"/>
+                            <input variable="numero"/>
+                            <while expression="numx&lt;=10">
+                                <output expression="numero &amp; &quot; X &quot; &amp; numx &amp; &quot; = &quot; &amp; numero-numx" newline="True"/>
+                                <assign variable="numx" expression="numx+1"/>
+                            </while>
+                        </then>
+                        <else>
+                            <if expression="&quot;multiplicacao&quot;">
+                                <then>
+                                    <output expression="&quot;A TABUADA da MULTIPLICA&#199;&#195;O de qual n&#250;mero voc&#234; gostaria ? &quot;" newline="True"/>
+                                    <input variable="numero"/>
+                                    <while expression="numx&lt;=10">
+                                        <output expression="numero &amp; &quot; X &quot; &amp; numx &amp; &quot; = &quot; &amp; numero*numx" newline="True"/>
+                                        <assign variable="numx" expression="numx+1"/>
+                                    </while>
+                                </then>
+                                <else>
+                                    <if expression="&quot;divisao&quot;">
+                                        <then>
+                                            <output expression="&quot;A TABUADA da DIVIS&#195;O de qual n&#250;mero voc&#234; gostaria ? &quot;" newline="True"/>
+                                            <input variable="numero"/>
+                                            <while expression="numx&lt;=10">
+                                                <output expression="numero &amp; &quot; X &quot; &amp; numx &amp; &quot; = &quot; &amp; numero/numx" newline="True"/>
+                                                <assign variable="numx" expression="numx+1"/>
+                                            </while>
+                                        </then>
+                                        <else>
+                                            <breakpoint/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
