@@ -1,0 +1,34 @@
+#setInterval
+
+setInterval(funcao(), tempo); -:
+
+- O setInterval serve para executar uma função ou 
+instrução várias vezes em um determinado intervalo de tempo.
+
+- Isto significa que a função "funcao" será executada assim cada vez que se atingir o determinado tempo. O tempo padrão é dado por milésimos por segundo, ou seja, 1 segundo equivale a 1000 milésimos. Vejamos o exemplo a seguir:
+
+function ContarSegundos(){
+    var segundos = 1;
+    document.Writeln("Já passou " + segundos +" segundos...");
+}
+setInterval(ContarSegundos, 1000);
+
+- A instrução acima indica que a cada segundo a função "ContarSegundos()" será executada.
+
+#setTimeout
+
+- O setTimeout serve para executar uma função ou instrução quando atingir o seu tempo e 
+essa instrução é executada apenas uma vez.
+
+- A sua sintaxe é:
+
+setTimeout(funcao, tempo);
+
+- Vejamos o nosso exemplo:
+
+function DezSegundos(){
+    alert("Já temos dez segundos.");
+}
+setTimeout(DezSegundos, 1000*10);
+
+- Quando chegar aos dez segundos o alerta será lançado.
